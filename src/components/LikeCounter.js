@@ -24,12 +24,16 @@ export default function LikeCounter() {
     <div>
       <p>
         This post has <b>{numLikes}</b> likes!
+      </p>
+      <p>
         <button onClick={increment}>Like</button>
+      </p>
+      <p>
         <button onClick={reset}>Reset</button>
       </p>
       <p>
         <button onClick={changeStateLike}>
-          {likeState ? "Unlike" : "like"}{" "}
+          {likeState ? "I don't like" : "I Like it"}{" "}
         </button>
       </p>
     </div>
